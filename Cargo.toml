@@ -1,0 +1,12 @@
+[profile.release]
+panic = 'unwind'
+
+[workspace]
+members = [
+	'node',
+	'pallets/template',
+	'pallets/sum-storage',
+	'pallets/sum-storage/runtime-api',
+	'pallets/sum-storage/rpc',
+	'runtime',
+]
