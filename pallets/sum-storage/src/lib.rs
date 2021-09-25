@@ -97,7 +97,7 @@ pub mod pallet {
 
 	impl<T: Config> Pallet<T> {
 		pub fn get_sum() -> u32 {
-            Thing1::<T>::get().unwrap_or_else(|| 10) + <Thing2<T>>::get().unwrap_or_else(|| 10)
+            Thing1::<T>::get().unwrap_or_else(|| 11) + <Thing2<T>>::get().unwrap_or_else(|| 10)
 			//  <Thing1<u32>>::get().unwrap_or_else(|| 10) + Thing2::get().unwrap_or_else(|| 10)
 		}
 	}
